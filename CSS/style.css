@@ -1,6 +1,373 @@
-/*Basic Reset*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/*==============================
+RESET
+==============================*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*==============================
+COLOUR SYSTEM
+==============================*/
+:root {
+    --primary-green: #2D6A2D;
+    --accent-green: #4CAF50;
+    --light-green: #E8F5E9;
+    --white: #FFFFFF;
+    --dark: #1A1A1A;
+    --grey: #777;
+    --light-grey: #F5F5F5;
+
+    --radius: 12px;
+    --shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/*==============================
+BASE
+==============================*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/*==============================
+CONTAINER
+==============================*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*==============================
+HEADER
+==============================*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    padding: 0.8rem 0;
+    border-bottom: 2px solid var(--light-green);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* LOGO */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-section img {
+    width: 70px;
+}
+
+.logo-section h1 {
+    font-family: "Playfair Display", serif;
+    color: var(--primary-green);
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+/* NAVIGATION */
+.nav-section ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-section a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+    padding: 0.3rem 0;
+    transition: 0.3s ease;
+}
+
+/* hover underline */
+.nav-section a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-green);
+    transition: 0.3s ease;
+}
+
+.nav-section a:hover {
+    color: var(--accent-green);
+}
+
+.nav-section a:hover::after {
+    width: 100%;
+}
+
+/* active */
+.nav-section a.active {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--primary-green);
+}
+
+/*==============================
+HERO
+==============================*/
+.hero-section {
+    margin-top: 2rem;
+    background: var(--light-green);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.hero-section:hover {
+    transform: translateY(-5px);
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-content {
+    padding: 3rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    color: var(--primary-green);
+}
+
+/*==============================
+SECTIONS
+==============================*/
+section {
+    margin: 2rem 0;
+}
+
+.content-box {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.content-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/*==============================
+HEADINGS
+==============================*/
+h2 {
+    font-family: "Playfair Display", serif;
+    color: var(--primary-green);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--primary-green);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/*==============================
+TEXT
+==============================*/
+p {
+    margin-bottom: 1rem;
+}
+
+/*==============================
+BUTTONS
+==============================*/
+button {
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background: var(--accent-green);
+    transform: scale(1.05);
+}
+
+/*==============================
+FORMS
+==============================*/
+input, textarea, select {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    margin-top: 0.5rem;
+    background: var(--light-grey);
+    transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent-green);
+    background: white;
+    box-shadow: 0 0 8px rgba(76,175,80,0.3);
+}
+
+/*==============================
+TABLE
+==============================*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+table th {
+    background: var(--primary-green);
+    color: white;
+    padding: 1rem;
+}
+
+table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:nth-child(even) {
+    background: var(--light-green);
+}
+
+table tr:hover {
+    background: #dff5df;
+}
+
+/*==============================
+FOOTER
+==============================*/
+footer {
+    margin-top: 3rem;
+    background: var(--primary-green);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/*==============================
+RESPONSIVE SYSTEM (FIXED PROPER 3 LEVELS)
+==============================*/
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-section ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-section {
+        justify-content: center;
+    }
+
+    .nav-section ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-section a {
+        display: block;
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .content-box {
+        padding: 1rem;
+    }
+
+    .logo-section h1 {
+        font-size: 1.5rem;
+    }
 }
