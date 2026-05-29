@@ -3,66 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry Charles Greenway</title>
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Enquiry | Charles Greenway</title>
 </head>
+
 <body>
-    <!--Logo-->
-<img src="Images/Charles Greenway logo.png" alt="website Loog" width="120">
 
-<h1>Charles Greenway</h1>
+    <!--Container-->
+    <div class="container">
 
-<!--Navigation-->
-        <nav>
-             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                 <li><a href="services.html">Services</a></li>
-                 <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-</body>
+        <!--Header-->
+        <header>
 
-<!--Main part/details of the page-->
-<main>
-<h2>Enquiry</h2>
-<p>Please fill the form below to enquire about our services</p>
+            <!--Header Container-->
+            <div class="header-container">
 
-<!--Enqiry form-->
-<form>
-    <!--Full name-->
-    <label>Full Name</label><br>
-    <input type="text" name="name" required><br><br>
+                <!--Logo Section-->
+                <div class="logo-section">
+                    <img src="Images/Charles Greenway logo.png" alt="website Logo" width="120">
+                    <h1>Charles Greenway</h1>
+                </div>
 
-    <!--Email-->
-    <label>Email</label><br>
-    <input type="email" name="email" required><br><br>
+                <!--Navigation-->
+                <div class="nav-section">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="enquiry.html">Enquiry</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-    <!--Phone number-->
-    <label>Phone Number</label><br>
-    <input type="tel" name="phone" required><br><br>
+            </div>
 
-    <!--Dropdown to select Enqiry-->
-    <label>Select Services</label><br>
-    <select>
-        <option>Lawn  mowing and general garden cleaning</option>
-        <option>Plant watering and maitenence</option>
-        <option>Tree, hedge and bush trimming</option>
-        <option>Weed removal and soil care</option>
-        <option>Pest control and plant protection</option>
-    </select><br><br>
+        </header>
 
-    <!--comments or questions-->
-    <lable>Message</lable><br>
-    <textarea rows="5"></textarea><br><br>
+        <!--Main Content-->
+        <main>
 
-    <!--button to submit form-->
-    <button type="submit">Submit Enqiry</button>
-</form>
-</main>
-<!--Footer-->
+            <section class="enquiry-section">
+
+                <div class="content-box">
+
+                    <h2>Enquiry</h2>
+
+                    <p>Please fill in the form below to enquire about our services.</p>
+
+                    <!--Enquiry Form-->
+                    <form class="enquiry-form">
+
+                        <!--Full Name-->
+                        <div class="form-group">
+                            <label>Full Name</label><br>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <br>
+
+                        <!--Email-->
+                        <div class="form-group">
+                            <label>Email</label><br>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <br>
+
+                        <!--Phone Number-->
+                        <div class="form-group">
+                            <label>Phone Number</label><br>
+                            <input type="tel" name="phone" required>
+                        </div>
+
+                        <br>
+
+                        <!--Service Selection-->
+                        <div class="form-group">
+                            <label>Select Services</label><br>
+                            <select>
+                                <option>Lawn mowing and general garden cleaning</option>
+                                <option>Plant watering and maintenance</option>
+                                <option>Tree, hedge and bush trimming</option>
+                                <option>Weed removal and soil care</option>
+                                <option>Pest control and plant protection</option>
+                            </select>
+                        </div>
+
+                        <br>
+
+                        <!--Message-->
+                        <div class="form-group">
+                            <label>Message</label><br>
+                            <textarea rows="5" placeholder="Enter your message"></textarea>
+                        </div>
+
+                        <br>
+
+                        <!--Submit Button-->
+                        <div class="button-section">
+                            <button type="submit">Submit Enquiry</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!--Footer-->
         <footer>
-        <p>&copy; 2026 Wesite Project/POE</p>
+
+            <div class="footer-container">
+                <p>&copy; 2026 Website Project/POE</p>
+            </div>
+
         </footer>
+
+    </div>
+
+</body>
 </html>
