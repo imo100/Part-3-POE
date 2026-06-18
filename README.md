@@ -367,21 +367,25 @@ Research was used to gather:
 
 > Insert desktop wireframe image here.
 
+## Desktop Responsive Screenshot
+![Desktop image](Images/Laptop.png)
+
 
 
 ## Tablet Wireframe
 
 > Insert tablet wireframe image here.
+![Ipad image](Images/Ipad.png)
 
 
 
 ## Mobile Wireframe
 
 > Insert mobile wireframe image here.
-
+![phone image](Images/phone.png)
 !
 # Images and Resources Used
-
+![sitemap image](Images/Sitemap.png)
 ## Images
 
 | Resource           | Source          |
@@ -457,7 +461,23 @@ Research was used to gather:
 | 29 May 2026   | Added image and asset documentation                     |
 | 29 May 2026   | Updated README formatting for professional presentation |
 | 17 June 2026   | Updated README formatting for professional presentation
-| 29 May 2026   | and added content and reserch to proposal  |
+| 17 May 2026   | and added content and reserch to proposal  |
+| Date        | Description                                                                                                                      |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 17 May 2026 | Created initial website structure with HTML pages (Home, About, Services, Enquiry, Contact, Gallery) and basic navigation system |
+| 18 May 2026 | Styled website using CSS including header, footer, layout system, typography, and colour variables                               |
+| 18 May 2026 | Improved responsive design using media queries for tablet and mobile compatibility                                               |
+| 18 May 2026 | Built enquiry form with HTML form elements (input, select, textarea, button)                                                     |
+| 18 May 2026 | Added JavaScript form validation for enquiry page (name, email, phone validation)                                                |
+| 18 May 2026 | Added JavaScript contact form validation with required field checks and submission handling                                      |
+| 18 May 2026 | Implemented dynamic footer JavaScript displaying current date and year                                                           |
+| 18 May 2026 | Created interactive image gallery using JavaScript DOM manipulation                                                              |
+| 18 May 2026 | Added lightbox functionality allowing images to open in enlarged view with navigation controls (next/previous)                   |
+| 18 May 2026 | Fixed gallery JavaScript to correctly use existing HTML images instead of dynamically generating broken image paths              |
+| 18 May 2026 | Improved gallery CSS layout to display images in a 4-column grid with responsive scaling for tablet and mobile                   |
+| 18 May 2026 | Ensured all gallery images display in uniform size using object-fit: cover for consistent UI                                     |
+| 18 May 2026 | Created SEO files including sitemap.xml and robots.txt to improve search engine indexing                                         |
+| 18 May 2026 | Optimised website for SEO by structuring pages for indexing and improving crawlability                                           |
 
 ---
 
