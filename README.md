@@ -2,10 +2,14 @@
 
 ## Student Information
 
-**Student Name:** Imaad Charles
-**Student Number:** ST10531353
-**Module:** WEDE5020
-**Project:** POE / Project Part 1
+**Student Name:** 
+Imaad Charles
+**Student Number:**
+ ST10531353
+**Module:** 
+WEDE5020
+**Project:** 
+POE / Project Part 1, 2 and 3
 
 ---
 
@@ -372,21 +376,20 @@ Research was used to gather:
 
 
 
-## Tablet Wireframe
+## Tablet Responsive Screenshot
 
 > Insert tablet wireframe image here.
 ![Ipad image](Images/Ipad.png)
 
 
 
-## Mobile Wireframe
+## Mobile Phone Responsive Screenshot
 
 > Insert mobile wireframe image here.
 ![phone image](Images/phone.png)
 !
-# Images and Resources Used
+ Resources Used
 
-## Images
 
 | Resource           | Source          |
 | ------------------ | --------------- |
