@@ -1,14 +1,17 @@
 # Charles Greenway Website
 
-## Student Information
+### Student Information
 
-**Student Name:** 
+### Student Name 
 Imaad Charles
-**Student Number:**
+
+### Student Number
  ST10531353
-**Module:** 
+
+### Module 
 WEDE5020
-**Project:** 
+
+### Project 
 POE / Project Part 1, 2 and 3
 
 ---
